@@ -1,0 +1,38 @@
+@use "sass:math";
+
+$root-font-size:10px;
+html {
+    font-size:$root-font-size;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+@mixin flex-box-row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+@mixin flex-box-colum {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+//function
+@function pxToRem($px){
+    // @return $px/$root-font-size * 1rem;
+    @return math.div($px, $root-font-size) * 1rem;
+}
+//媒體查詢
+// @media only screen and (max-width:800px){
+//     $root-font-size:5px;
+//     html {
+//         font-size:$root-font-size;
+//     }
+// }

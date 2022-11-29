@@ -1,0 +1,132 @@
+@media only screen and (max-width:768px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+
+    .container {
+        display: flex;
+        margin-top: pxToRem(30px) !important;
+        flex-direction: column !important;
+        height: 1000px !important;
+        ;
+    }
+
+    .resume-main {
+        align-content: initial !important;
+
+        img {
+            width: 30vw !important;
+            height: 30vw !important;
+        }
+    }
+    .resume-left {
+        margin-top: -80px;
+    }
+}
+
+//769~991px
+@media only screen and (min-width:769px) and (max-width:991px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+
+    .container {
+        // flex-direction: column;
+        margin-top: pxToRem(30px) !important;
+        height: 1000px !important;
+
+    }
+
+    .resume-main {
+        align-content: initial !important;
+
+        img {
+            width: 20vw !important;
+            height: 20vw !important;
+        }
+    }
+
+}
+
+.container {
+    margin-top: pxToRem(-50px);
+    // width: 100%;
+    height: pxToRem(500px);
+    @include flex-box-colum();
+
+    .resume-header {
+        flex: 1;
+    }
+
+    .resume-main {
+        flex: 8;
+    }
+}
+
+.resume-header {
+    &-title {
+        @include flex-box-colum();
+        width: 80%;
+        height: 90%;
+        border: pxToRem(5px) solid rgb(245, 165, 8);
+        border-radius: 4px;
+
+        h5 {
+            font-size: pxToRem(30px);
+            text-align: center;
+        }
+    }
+}
+
+.resume-main {
+    @include flex-box-row();
+
+    .resume-left {
+        flex: 1;
+        @include flex-box-colum();
+    }
+
+    .resume-right {
+        flex: 1;
+        @include flex-box-colum();
+    }
+
+}
+
+.resume-item {
+    // margin: 10px;
+    width: 80%;
+    @include flex-box-colum();
+    height: 350px;
+    background-color: rgba(255, 254, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 254, 255, 0.5);
+    border-left: 1px solid rgba(255, 254, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    @include flex-box-colum();
+
+    .resume-img {
+        @include flex-box-colum();
+        flex: 1;
+
+        img {
+            margin: 20px auto;
+            width: 10vw;
+            height: 10vw;
+        }
+    }
+
+    .resume-li {
+        padding-left: pxToRem(20px);
+        font-size: pxToRem(20px);
+        font-weight: 700;
+        flex: 1;
+    }
+}
