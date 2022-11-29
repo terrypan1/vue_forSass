@@ -1,0 +1,76 @@
+$progerssHight: 50px;
+
+@media only screen and (max-width:768px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:991px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+}
+
+@mixin flex-row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container {
+    @include flex-row();
+    height: pxToRem(500px);
+
+    .progress {
+        flex: 2;
+        // background-color: blue;
+    }
+
+    .aboutMe {
+        flex: 8;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+
+}
+
+.progress {
+    ul {
+        height: 100%;
+        width: 80%;
+        // background-color: yellow;
+
+        li {
+            list-style: none;
+            border-radius: 50%;
+            height: $progerssHight;
+            width: 50px;
+            text-align: center;
+            font-weight: 700;
+            line-height: $progerssHight;
+            color: #999;
+            border: 3px solid #e0e0e0;
+            margin-top: 30px;
+            margin-left: 30px;
+
+        }
+    }
+}
+.circleBar1 {
+    background-color: black;
+    // background-color: #e0e0e0;
+    position: absolute;
+    // margin-top: 230px;
+    // margin-left: -93px;
+    transform: rotate(90deg);
+    height: 4px;
+    width: 300px;
+}
