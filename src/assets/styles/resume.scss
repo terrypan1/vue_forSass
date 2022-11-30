@@ -57,6 +57,7 @@
     @include flex-box-row();
 
     &-link>a {
+        color: black;
         padding: pxToRem(20px);
         font-size: pxToRem(20px);
         font-weight: 700;

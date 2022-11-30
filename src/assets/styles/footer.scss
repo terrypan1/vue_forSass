@@ -1,0 +1,290 @@
+@media only screen and (max-width:768px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+
+    .foot-container {
+        height: pxToRem(900px) !important;
+    }
+
+    .scrollAll,
+    .anchor-header {
+        display: none;
+    }
+
+    .main-container {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .box-mainLeft {
+        ul {
+            font-size: pxToRem(12px) !important;
+            padding: 0 !important;
+        }
+    }
+    .weather,
+    .game {
+        margin-top: 50px
+    }
+    .Phone {
+        width: pxToRem(80px) !important;
+        left: 50% !important;;
+        transition: .5s;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:991px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+
+    .foot-container {
+        height: pxToRem(1400px) !important;
+    }
+
+    .scrollAll,
+    .anchor-header {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .weather,
+    .game {
+        margin-top: 50px
+    }
+    .Phone {
+        width: 15vw !important;
+        top: 20% !important;
+        left: 60% !important;
+        transition: .5s;
+    }
+}
+
+.foot-container {
+    @include flex-box-colum();
+    height: pxToRem(600px);
+    position: relative;
+    overflow: hidden;
+    .anchor-header {
+        top: 10%;
+        left: 60%;
+        position: absolute;
+        background-color: pink;
+    }
+
+    .footer-main {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.anchor-header {
+    top: 50%;
+    left: 90%;
+
+    span {
+        color: black;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    transition: 1s all;
+
+    .main-header {
+        flex: 1;
+        width: 100%;
+    }
+
+    .main-container {
+        flex: 8;
+    }
+}
+
+.main-header {
+    @include flex-row();
+
+    .main-header-title {
+        @include flex-row();
+        position: relative;
+        width: 80%;
+        height: 100%;
+
+        .titleFont {
+            font-size: pxToRem(40px);
+            font-weight: 900;
+            color: rgba(58, 101, 126);
+            z-index: 1;
+        }
+
+        .titlebg1 {
+            position: absolute;
+            top: 25%;
+            left: 45%;
+            width: 10%;
+            height: 30%;
+            background-color: rgba(248, 219, 189);
+        }
+
+        .titlebg2 {
+            position: absolute;
+            top: 10%;
+            left: 45%;
+            width: 10%;
+            height: 30%;
+            margin: 30px 15px;
+            background-color: rgba(251, 242, 157);
+        }
+    }
+}
+
+.main-container {
+    
+    width: 200%;
+    @include flex-row();
+
+    .slot {
+        @include flex-box-colum();
+        flex: 1;
+        width: 80%;
+        height: 80%;
+    }
+
+    .game {
+        flex: 1;
+        @include flex-box-colum();
+        width: 80%;
+        height: 80%;
+    }
+
+    .weather {
+        flex: 1;
+        @include flex-box-colum();
+        width: 80%;
+        height: 80%;
+    }
+
+    .box {
+        width: 70%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        &-header {
+            flex: 1;
+            background-color: rgba(58, 101, 126);
+            font-size: pxToRem(20px);
+            text-align: center;
+            line-height: 200%;
+        }
+
+        &-main {
+            flex: 6;
+            display: flex;
+
+            .box-mainLeft {
+                flex: 1;
+                background-color: rgba(112, 146, 167);
+
+                ul {
+                    padding-left: pxToRem(20px);
+                    ;
+                }
+
+                li {
+                    font-size: pxToRem(15px);
+                    list-style: none
+                }
+            }
+        }
+
+        .box-mainRight {
+            flex: 4;
+            position: relative;
+            display: flex;
+            .mainRight-Img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .Phone {
+                position: absolute;
+                width: pxToRem(150px);
+                top: 25%;
+                left: 60%;
+                transition: .5s;
+            }
+        }
+    }
+
+}
+a {
+    color:#fff;
+}
+.scrollAll {
+    overflow: hidden;
+    height: pxToRem(40px);
+    width: 100%;
+    margin-bottom: 3%;
+    border-radius: 4px;
+    cursor: pointer;
+
+    .scroll {
+        height: 5vw;
+        margin-bottom: 3%;
+        border-radius: 4px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .scroll-message {
+        font-size: pxToRem(40px);
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .scroll-icon {
+        font-size: pxToRem(40px);
+    }
+
+    .scroll-iconRight {
+        // margin-top: 40px;
+        // margin-left: -50%;
+        cursor: pointer;
+    }
+}
+
+.moveMiddle {
+    transform: translate(-40%, 0%);
+    transition: all 1s;
+}
+
+.moveLeft {
+    transform: translate(-90%, 0%);
+    transition: all 1s;
+}
+
+.moveright {
+    transform: translate(0%, 0%);
+    transition: all 1s;
+}
+
+.reverse,
+.reverseBack {
+    transform: translate(50%, 0%) rotate(180deg);
+}

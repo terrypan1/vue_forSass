@@ -17,6 +17,13 @@ a {
     align-content: center;
     flex-wrap: wrap;
 }
+@mixin flex-row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 @mixin flex-box-colum {
     display: flex;
     justify-content: center;
