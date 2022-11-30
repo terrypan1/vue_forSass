@@ -69,6 +69,7 @@
 }
 
 .foot-container {
+    margin-top: 100px !important;
     @include flex-box-colum();
     height: pxToRem(600px);
     position: relative;
