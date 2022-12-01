@@ -1,0 +1,124 @@
+@media only screen and (max-width:499px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+
+    .slot-container {
+        width: pxToRem(400px) !important;
+        height: pxToRem(400px) !important;
+    }
+
+    .result1,
+    .result2,
+    .result3,
+    .endResult {
+        width: pxToRem(50px)!important;
+        height: pxToRem(50px)!important;
+        line-height: pxToRem(50px)!important;
+    }
+    .result2 {
+        left:pxToRem(150px)!important;
+    }
+    .result3 {
+        left:pxToRem(250px)!important;
+    }
+}
+
+//769~991px
+@media only screen and (min-width:769px) and (max-width:991px) {
+    $root-font-size: 10px;
+
+    html {
+        font-size: $root-font-size;
+    }
+}
+
+.slot-container {
+    position: relative;
+    width: pxToRem(500px);
+    height: pxToRem(500px);
+    margin: 50px auto;
+    opacity: 0.9;
+    box-shadow: 10px 10px 20px -5px black;
+    border-radius: 4px;
+}
+
+.result1,
+.result2,
+.result3,
+.endResult {
+    position: absolute;
+    width: pxToRem(100px);
+    height: pxToRem(100px);
+    top: 20px;
+    line-height: 100px;
+    text-align: center;
+    border: 1px solid orangered;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.result1 {
+    left: pxToRem(50px);
+    animation: pulse 2s infinite;
+    animation-delay: 0.4s;
+
+}
+
+.result2 {
+    left: pxToRem(200px);
+    animation: pulse 2s infinite;
+    animation-delay: 0.8s;
+}
+
+.result3 {
+    left: pxToRem(350px);
+    animation: pulse 2s infinite;
+    animation-delay: 1.2s;
+}
+
+.btnSt {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.btnEd {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+div .endResult {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 55%;
+    left: 40%;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.btnAg {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(-10px) scale(1);
+    }
+
+    50% {
+        transform: translateY(0px) scale(1.2);
+    }
+
+    100% {
+        transform: translateY(20px) scale(1.5);
+    }
+}
