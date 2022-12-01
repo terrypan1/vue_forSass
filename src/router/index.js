@@ -6,13 +6,19 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect:'/home',
+      redirect:'/frontPage',
+    },
+    {
+      path:'/frontPage',
+      name:'FrontPage',
+      component:()=>import('../views/FrontPage/FrontPage.vue')
     },
     {
       path:'/home',
       name:'Home',
       component:()=>import('../views/Home/Home.vue')
     },
+   
 
   ]
 })
