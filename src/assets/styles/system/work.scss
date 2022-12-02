@@ -24,13 +24,9 @@
         font-size: $root-font-size;
     }
 }
-
-.container {
-    @include flex-row();
-    height: pxToRem(1000px);
-
+.container {    
+    background-color: red;
     .aboutMe {
-        flex: 8;
         width: 100%;
         height: 100%;
     }
@@ -38,11 +34,10 @@
 }
 
 .aboutMe {
-    @include flex-row();
-
+    display: flex;
     &-ul {
         @include flex-box-colum();
-        height: 100%;
+        height: 200%;
         width: 80%;
     }
 

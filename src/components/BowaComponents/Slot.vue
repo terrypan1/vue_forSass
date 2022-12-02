@@ -39,14 +39,16 @@ onUnmounted(() => {
 })
 </script>
 <template>
-    <div class="slot-container">
-        <div v-for="(todo, index) in store.result1" :key="index" class="result1" ref="$result1">{{ todo }}</div>
-        <div v-for="(todo, index) in store.result2" :key="index" class="result2" ref="$result2">{{ todo }}</div>
-        <div v-for="(todo, index) in store.result3" :key="index" class="result3" ref="$result3">{{ todo }}</div>
-        <button class="btnSt" @click="btnST" :disabled="isDisable">開始</button>
-        <button class="btnEd" @click="btnEnd">結束</button>
-        <div class="endResult" ref="$endResult">結果</div>
-        <button class="btnAg"  @click="btnAg">再一次</button>
+    <div class="flex-slot">
+        <div class="slot-container">
+            <div v-for="(todo, index) in store.result1" :key="index" class="result1" ref="$result1">{{ todo }}</div>
+            <div v-for="(todo, index) in store.result2" :key="index" class="result2" ref="$result2">{{ todo }}</div>
+            <div v-for="(todo, index) in store.result3" :key="index" class="result3" ref="$result3">{{ todo }}</div>
+            <button class="btnSt" @click="btnST" :disabled="isDisable">開始</button>
+            <button class="btnEd" @click="btnEnd">結束</button>
+            <div class="endResult" ref="$endResult">結果</div>
+            <button class="btnAg"  @click="btnAg">再一次</button>
+        </div>
     </div>
 </template>
 

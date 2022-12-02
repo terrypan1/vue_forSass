@@ -2,15 +2,7 @@
 import Swiper from '../Resume/Swiper.vue'
 </script>
 <template>
-    <div class="container">
-        <!-- <div class="resume-header">
-            <div class="resume-header-link">
-                <RouterLink to="/system/index">登陸</RouterLink>
-                <RouterLink to="/layout/slot">技能</RouterLink>
-                <RouterLink to="/layout/weather">工作經歷</RouterLink>
-                <RouterLink to="/layout/game">Vue</RouterLink>
-            </div>
-        </div> -->
+    <!-- <div class="container">
         <div class="resume-main">
             <div class="resume-main-message">
                 <h5>About Me</h5><br>
@@ -23,7 +15,7 @@ import Swiper from '../Resume/Swiper.vue'
                 <Swiper class="swiper"></Swiper>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 <style lang="scss">
 

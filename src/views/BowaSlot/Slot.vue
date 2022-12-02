@@ -4,6 +4,3 @@ import Slot from '../../components/BowaComponents/Slot.vue'
 <template>
     <Slot></Slot>
 </template>
-<style scoped>
-
-</style>

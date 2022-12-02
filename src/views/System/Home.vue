@@ -7,10 +7,10 @@ const store = useSliderStore()
 </script>
 <template>
     <div class="system-container">
-        <div class="system-left" :class="{ systemLeftSlider: store.isIndex }">
+        <div class="system-left" >
             <SystemLeft></SystemLeft>
         </div>
-        <div class="system-right" :class="{ systemRightSlider: store.isIndex }">
+        <div class="system-right" >
             <SystemHeader class="system-right-header"></SystemHeader>
             <SystemRight class="system-right-main"></SystemRight>
         </div>

@@ -55,7 +55,7 @@ onMounted(() => {
                 <div class="slot">
                     <div class="box">
                         <div class="box-header">
-                            <RouterLink to="/layout/slot" class="box-title">Slot Game</RouterLink>
+                            <RouterLink to="/system/slot" class="box-title">Slot Game</RouterLink>
                         </div>
                         <div class="box-main">
                             <div class="box-mainLeft">
@@ -74,7 +74,7 @@ onMounted(() => {
                 <div class="game">
                     <div class="box">
                         <div class="box-header">
-                            <RouterLink to="/layout/game" class="box-title">Slot Game</RouterLink>
+                            <RouterLink to="/system/game" class="box-title">Slot Game</RouterLink>
                         </div>
                         <div class="box-main">
                             <div class="box-mainLeft">
@@ -93,7 +93,7 @@ onMounted(() => {
                 <div class="weather">
                     <div class="box mr">
                         <div class="box-header">
-                            <RouterLink to="/layout/weather" class="box-title">Slot Game</RouterLink>
+                            <RouterLink to="/system/weather" class="box-title">Slot Weather</RouterLink>
                         </div>
                         <div class="box-main">
                             <div class="box-mainLeft">

@@ -29,9 +29,29 @@ const router = createRouter({
           component: () => import('../views/System/Index.vue')
         },
         {
+          path: 'person',
+          name: 'Person',
+          component: () => import('../views/System/Person.vue')
+        },
+        {
+          path: 'work',
+          name: 'Work',
+          component: () => import('../views/System/Work.vue')
+        },
+        {
           path: 'slot',
           name: 'Slot',
           component: () => import('../views/BowaSlot/Slot.vue')
+        },
+        {
+          path: 'weather',
+          name: 'Weather',
+          component: () => import('../views/BowaWeather/Weather.vue')
+        },
+        {
+          path: 'game',
+          name: 'Game',
+          component: () => import('../views/BowaGaem/Game.vue')
         },
       ]
     }

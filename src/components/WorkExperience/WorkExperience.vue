@@ -74,5 +74,5 @@
     </div>
 </template>
 <style lang="scss" scoped>
-@import '../../assets/styles/WorkExperience.scss';
+@import '../../assets/styles/workExperience.scss';
 </style>

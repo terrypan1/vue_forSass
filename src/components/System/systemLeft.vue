@@ -2,13 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { onMounted, ref, watchEffect } from 'vue'
 import { Sunrise, Menu as IconMenu, VideoPlay, Link, Expand, House, BrushFilled, UserFilled, User } from "@element-plus/icons";//解決element icon 無法出來的問題 
-import { useSliderStore } from '../../stores/System/slider'
-const store = useSliderStore()
 
-//
-const handelExpand = () => {
-    store.isIndex = false
-}
 //
 onMounted(() => {
 
@@ -19,14 +13,14 @@ onMounted(() => {
         <nav class="nav">
             <ul class="nav-brand">
                 <li>
-                    <el-icon @click="handelExpand" class="nav-brand-icon">
+                    <el-icon class="nav-brand-icon">
                         <Expand />
                     </el-icon>
-                    <span class="nav-message nav-messageHeader">個人簡介</span>
+                    <span class="nav-messageHeader">個人簡介</span>
                 </li>
             </ul>
             <ul class="nav-list">
-                <li class="nav-link" :class="{ collapse: store.isIndex }">
+                <li class="nav-link" >
                     <RouterLink to="/system/index">
                         <el-icon class="nav-icon">
                             <House />
@@ -34,23 +28,23 @@ onMounted(() => {
                         <span class="nav-message">首頁</span>
                     </RouterLink>
                 </li>
-                <li class="nav-link" :class="{ collapse: store.isIndex }">
-                    <RouterLink to="/system/personalMessage">
+                <li class="nav-link" >
+                    <RouterLink to="/system/person">
                         <el-icon class="nav-icon">
                             <UserFilled />
                         </el-icon>
-                        <span class="nav-message">個人信息</span>
+                        <span class="nav-message">個人介紹</span>
                     </RouterLink>
                 </li>
-                <li class="nav-link" :class="{ collapse: store.isIndex }">
-                    <RouterLink to="/system/workExperience">
+                <li class="nav-link" >
+                    <RouterLink to="/system/work">
                         <el-icon class="nav-icon">
                             <icon-menu />
                         </el-icon>
                         <span class="nav-message">工作經驗</span>
                     </RouterLink>
                 </li>
-                <li class="nav-link" :class="{ collapse: store.isIndex }">
+                <li class="nav-link" >
                     <RouterLink to="/system/slot">
                         <el-icon class="nav-icon">
                             <BrushFilled />
@@ -58,7 +52,7 @@ onMounted(() => {
                         <span class="nav-message">SlotGame</span>
                     </RouterLink>
                 </li>
-                <li class="nav-link" :class="{ collapse: store.isIndex }">
+                <li class="nav-link" >
                     <RouterLink to="/system/weather">
                         <el-icon class="nav-icon">
                             <Sunrise />
@@ -66,7 +60,7 @@ onMounted(() => {
                         <span class="nav-message">Weather</span>
                     </RouterLink>
                 </li>
-                <li class="nav-link" :class="{ collapse: store.isIndex }">
+                <li class="nav-link" >
                     <RouterLink to="/system/game">
                         <el-icon class="nav-icon">
                             <VideoPlay />

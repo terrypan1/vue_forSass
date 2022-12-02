@@ -2,5 +2,5 @@
 
 </script>
 <template>
-    <div>123</div>
+    <div>Weather</div>
 </template>
