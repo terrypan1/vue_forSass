@@ -1,6 +1,6 @@
 <script setup>
-
+import Weather from '../../components/BowaComponents/Weather.vue'
 </script>
 <template>
-    <div>Weather</div>
+    <Weather></Weather>
 </template>

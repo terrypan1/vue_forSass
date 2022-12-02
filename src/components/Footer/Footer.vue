@@ -21,11 +21,13 @@ const isRight = ref(false)
 const isReverse = ref(false)
 const isReverseBack = ref(false)
 const isBack = ref(false)
+const isturnBack = ref(true)
 const sliderRight = () => {
     isRight.value = false
     isMiddle.value = !isMiddle.value
     isLeft.value = !isLeft.value
     isReverseBack.value = !isReverseBack.value
+    isturnBack.value = !isturnBack.value
 }
 const sliderMiddle = () => {
     isRight.value = false
@@ -118,7 +120,8 @@ onMounted(() => {
                         <span class="scroll-message">Scroll</span>
                     </div>
                     <div>
-                        <el-icon class="scroll-icon" :class="{ reverse: isReverse }">
+                        <el-icon class="scroll-icon" v-if="isturnBack" 
+                        :class="{ reverse: isReverse }">
                             <Right />
                         </el-icon>
                     </div>

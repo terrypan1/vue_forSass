@@ -1,6 +1,6 @@
 <script setup>
-
+import Person from '../../components/Person/Person.vue'
 </script>
 <template>
-    <div>123</div>
+    <Person></Person>
 </template>

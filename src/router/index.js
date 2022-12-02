@@ -51,7 +51,7 @@ const router = createRouter({
         {
           path: 'game',
           name: 'Game',
-          component: () => import('../views/BowaGaem/Game.vue')
+          component: () => import('../views/BowaGame/Game.vue')
         },
       ]
     }
