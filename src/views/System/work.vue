@@ -1,6 +1,6 @@
 <script setup>
-
+import Work from '../../components/Work/Work.vue'
 </script>
 <template>
-    <div>123</div>
+    <Work></Work>
 </template>
