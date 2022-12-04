@@ -1,108 +1,47 @@
-<script setup>
-import Swiper from '../Resume/Swiper.vue'
+<script seetup>
+
 </script>
 <template>
-    <!-- <div class="container">
-        <div class="resume-main">
-            <div class="resume-main-message">
-                <h5>About Me</h5><br>
-                <span class="front">我是潘建宇(Pan CHIEN-YU)</span><br>
-                <span class="aboutMe">於2022年轉職前端，</span><br>
-                <span class="aboutMe">希望從事網頁工程師，</span><br>
-                <span class="aboutMe">目前多使用Vue3為主</span>
-            </div>
-            <div class="resume-main-footer">
-                <Swiper class="swiper"></Swiper>
+    <div class="index-container">
+        <div class="resume-header">
+            <div class="resume-header-title">
+                <h5>專業技能</h5>
             </div>
         </div>
-    </div> -->
+        <div class="resume-main">
+            <div class="resume-left">
+                <div class="resume-item">
+                    <div class="resume-img">
+                        <img src="../../assets/css.png" alt="">
+                    </div>
+                    <div class="resume-li">
+                        <ul>
+                            <li>了解使用語意化的方式架構HTML</li>
+                            <li>熟悉ES6語法，以及非同步事件處理</li>
+                            <li>孰悉axios與fetch串接</li>
+                            <li>了解RWD切版與Sass</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-right">
+                <div class="resume-item">
+                    <div class="resume-img">
+                        <img src="../../assets/vue.png" alt="" class="vue3">
+                    </div>
+                    <div class="resume-li">
+                        <ul>
+                            <li>熟悉Vue各種API以及生命週期</li>
+                            <li>熟悉Vue-router建構SPA</li>
+                            <li>熟悉pinia管理全局</li>
+                            <li>使用Vue3.0與vite搭建專案</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 <style lang="scss">
-
-
-@media only screen and (max-width:768px) {
-    $root-font-size: 10px;
-    html {
-        font-size: $root-font-size;
-    }
-    .resume-main {
-        flex-direction: column-reverse;
-    }
-
-}
-
-@media only screen and (min-width:769px) {
-    $root-font-size: 10px;
-
-    html {
-        font-size: $root-font-size;
-    }
-    .resume-main {
-        flex-direction: column-reverse;
-     }
-     .container {
-        margin-bottom: 100px;
-     }
-}
-
-@media only screen and (min-width:992px) {
-    $root-font-size: 12px;
-
-    html {
-        font-size: $root-font-size;
-    }
-    .resume-main {
-        flex-direction: row;
-     }
-}
-
-.container {
-    width: 100%;
-    height: pxToRem(350px);
-    overflow: hidden;
-    @include flex-box-colum();
-
-    .resume-header {
-        flex: 1;
-        position: fix;
-    }
-
-    .resume-main {
-        width: 100%;
-        flex: 8;
-    }
-}
-
-.resume-header {
-    @include flex-box-row();
-
-    &-link>a {
-        color: black;
-        padding: pxToRem(20px);
-        font-size: pxToRem(20px);
-        font-weight: 700;
-    }
-
-}
-
-.resume-main {
-    display: flex;
-    &-message {
-        @include flex-box-colum();
-        flex: 1;
-        color: black;
-        font-weight: 700;
-        h5 {
-            font-size: pxToRem(30px) ;
-        }
-        span {
-            font-size: pxToRem(16px) ;
-        }
-    }
-
-    &-footer {
-        flex: 1;
-        @include flex-box-colum();
-    }
-}
+@import '../../assets/styles/system/index.scss';
 </style>

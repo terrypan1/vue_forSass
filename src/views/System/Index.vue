@@ -1,6 +1,6 @@
 <script setup>
-import Person from '../../components/Person/Person.vue'
+import Index from '../../components/Index/Index.vue'
 </script>
 <template>
-    <Person></Person>
+    <Index ></Index>
 </template>

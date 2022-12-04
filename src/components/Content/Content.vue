@@ -19,7 +19,7 @@
                             <li>了解使用語意化的方式架構HTML</li>
                             <li>熟悉ES6語法，以及非同步事件處理</li>
                             <li>孰悉axios與fetch串接</li>
-                            <li>了解RWD切版與Bootstrap基本使用</li>
+                            <li>了解RWD切版與Sass</li>
                         </ul>
                     </div>
                 </div>

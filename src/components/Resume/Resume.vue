@@ -5,9 +5,9 @@ import Swiper from './Swiper.vue'
     <div class="container">
         <div class="resume-header">
             <div class="resume-header-link">
-                <RouterLink to="/system/person">登陸</RouterLink>
+                <RouterLink to="/system/index">登陸</RouterLink>
                 <RouterLink to="/system/person">技能</RouterLink>
-                <RouterLink to="/system/person">工作經歷</RouterLink>
+                <RouterLink to="/system/work">工作經歷</RouterLink>
                 <RouterLink to="/system/person">Vue</RouterLink>
             </div>
         </div>

@@ -229,6 +229,9 @@
                 top: 25%;
                 left: 60%;
                 transition: .5s;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -264,8 +267,6 @@ a {
     }
 
     .scroll-iconRight {
-        // margin-top: 40px;
-        // margin-left: -50%;
         cursor: pointer;
     }
 }
