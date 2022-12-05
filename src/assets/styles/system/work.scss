@@ -11,6 +11,9 @@
     .aboutMe-footer {
         ul {
             flex-direction: column !important;
+            .aboutMe-card li {
+                font-size: 16px !important;
+            }
         }
     }
 
