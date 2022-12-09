@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import axios from 'axios'
-
+import { getGovment } from '../../http/api/govment'
 export const useWeatherStore = defineStore('weather', {
     state: () => {
         return {
@@ -81,6 +81,9 @@ export const useWeatherStore = defineStore('weather', {
                 this.setData(res)
                 this.setTempList()
             })
+        },
+        async init(){
+            await getGovment()
         }
     }
 })

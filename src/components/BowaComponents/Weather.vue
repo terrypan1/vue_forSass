@@ -6,7 +6,8 @@ const store = useWeatherStore()
 //
 onMounted(() => {
     store.setNowTime()
-    store.axiosWeather()
+    // store.axiosWeather()
+    store.init()
 })
 </script>
 <template>
